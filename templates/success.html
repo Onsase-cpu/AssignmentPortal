@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Successful</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            margin: 8px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1a252f;
+        }
+
+        .secondary {
+            background: #7f8c8d;
+        }
+
+        .secondary:hover {
+            background: #636e72;
+        }
+
+        .check {
+            font-size: 50px;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="check">✔</div>
+
+    <h1>Submission Successful</h1>
+
+    <p>
+        Your assignment has been received and securely stored in the system.
+        You may now return to the submission portal or exit.
+    </p>
+
+    <a class="btn" href="{{ url_for('submit') }}">Submit Another</a>
+    <a class="btn secondary" href="{{ url_for('index') }}">Back to Home</a>
+
+</div>
+
+</body>
+</html>
